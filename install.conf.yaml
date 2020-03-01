@@ -5,6 +5,7 @@
     ~/.gitconfig: gitconfig
     ~/.screenrc: screenrc
     ~/.vimrc: vimrc
+    ~/.Xresources: Xresources_dark
     ~/.zshrc: zshrc
     ~/.config/i3:
         path: config/i3/

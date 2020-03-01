@@ -1,0 +1,12 @@
+- clean: ['~']
+
+- link:
+    ~/.profile: profile
+    ~/.gitconfig: gitconfig
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.config/i3:
+        path: config/i3/
+        create: true
+
+

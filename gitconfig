@@ -1,0 +1,7 @@
+[user]
+	email = dev@bfeld.eu
+	name = bfeld
+[advice]
+	detachedHead = false
+[http]
+	sslVerify = false

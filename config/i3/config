@@ -189,6 +189,8 @@ bindsym $mod+Ctrl+Right resize grow width 10 px or 10 ppt
 bindsym Shift+Ctrl+l exec dm-tool switch-to-greeter
 bindsym Shift+Ctrl+s exec dm-tool switch-to-greeter && sleep 5 && systemctl -i suspend
 
+bindsym Shift+Ctrl+c exec xmodmap ~/.swapcapsesc
+
 assign [class="Emacs"] $ws1
 assign [class="URxvt" instance="dev"] $ws1
 assign [class="Evolution"] $ws8

@@ -203,6 +203,6 @@ exec evolution
 exec opera 
 exec urxvt -name admin
 
-exec octopi-notifier
+exec pamac-tray 
 exec xmodmap ~/.swapcapsesc
 

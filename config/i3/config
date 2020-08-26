@@ -25,8 +25,8 @@ font pango:monospace 9
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-exec --no-startup-id xset dpms 300
-exec --no-startup-id xautolock -time 7 -locker '~/.config/i3/i3lock-solarized/bin/i3lock-solarized-dark.sh' -notify 20 -notifier 'notify-send -u normal -t 20000 "Locking Session"'
+exec --no-startup-id xautolock -time 5 -corners ---- -locker '~/.config/i3/i3lock-solarized/bin/i3lock-solarized-dark.sh' -notify 20 -notifier 'notify-send -u normal -t 20000 "Locking Session"'
+exec --no-startup-id xset dpms 600
 # exec --no-startup-id xautolock -time 2 -locker 'dm-tool switch-to-greeter'
 # exec --no-startup-id xautolock -time 3 -locker 'systemctl -i suspend'
 

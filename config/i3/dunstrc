@@ -155,7 +155,9 @@ max_icon_size = 80
 icon_path = /usr/share/icons/Paper/16x16/mimetypes/:/usr/share/icons/Paper/48x48/status/:/usr/share/icons/Paper/16x16/devices/:/usr/share/icons/Paper/48x48/notifications/:/usr/share/icons/Paper/48x48/emblems/
 
 frame_width = 3
-frame_color = "#8EC07C"
+background = "#073642"
+foreground = "#859900"
+frame_color = "#586e75"
 
 [shortcuts]
 
@@ -173,7 +175,7 @@ close_all = ctrl+shift+space
 # Redisplay last message(s).
 # On the US keyboard layout "grave" is normally above TAB and left
 # of "1".
-history = ctrl+grave
+history = ctrl+h
 
 # Context menu.
 context = ctrl+shift+period
@@ -181,35 +183,22 @@ context = ctrl+shift+period
 [urgency_low]
 # IMPORTANT: colors have to be defined in quotation marks.
 # Otherwise the "#" and following would be interpreted as a comment.
-background = "#404040"
-foreground = "#CCCCCC"
+background = "#073642"
+foreground = "#859900"
+frame_color = "#586e75"
 timeout = 4
 
-[urgency_critical]
-background = "#dc322f"
-foreground = "#DDDDDD"
-# frame_color = "#3B7C87"
-# foreground = "#3B7C87"
-# background = "#191311"
-#background = "#2B313C"
-timeout = 8
-
 [urgency_normal]
-# frame_color = "#5B8234"
-# foreground = "#5B8234"
-# background = "#191311"
-background = "#859900"
-foreground = "#DDDDDD"
-#background = "#2B313C"
+background = "#073642"
+foreground = "#b58900"
+frame_color = "#586e75"
 timeout = 6
 
-# [urgency_critical]
-# frame_color = "#B7472A"
-# foreground = "#B7472A"
-# background = "#191311"
-#background = "#2B313C"
-# timeout = 8
-
+[urgency_critical]
+background = "#073642"
+foreground = "#cb4b16"
+frame_color = "#586e75"
+timeout = 8
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.

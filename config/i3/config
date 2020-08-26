@@ -25,10 +25,14 @@ font pango:monospace 9
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xset dpms 300
+exec --no-startup-id xautolock -time 7 -locker '~/.config/i3/i3lock-solarized/bin/i3lock-solarized-dark.sh' -notify 20 -notifier 'notify-send -u normal -t 20000 "Locking Session"'
+# exec --no-startup-id xautolock -time 2 -locker 'dm-tool switch-to-greeter'
+# exec --no-startup-id xautolock -time 3 -locker 'systemctl -i suspend'
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -186,13 +190,13 @@ bindsym $mod+Ctrl+Up resize grow height 10 px or 10 ppt
 bindsym $mod+Ctrl+Down resize shrink height 10 px or 10 ppt
 bindsym $mod+Ctrl+Right resize grow width 10 px or 10 ppt
 
-bindsym Shift+Ctrl+l exec i3lock && dm-tool switch-to-greeter
-bindsym Shift+Ctrl+s exec i3lock && dm-tool switch-to-greeter && sleep 5 && systemctl -i suspend
+bindsym Shift+Ctrl+l exec ~/.config/i3/i3lock-solarized/bin/i3lock-solarized-dark.sh && dm-tool switch-to-greeter
+bindsym Shift+Ctrl+s exec ~/.config/i3/i3lock-solarized/bin/i3lock-solarized-dark.sh && dm-tool switch-to-greeter && sleep 5 && systemctl -i suspend
 
 bindsym Shift+Ctrl+c exec xmodmap ~/.swapcapsesc
 
-assign [class="Emacs"] $ws1
 assign [class="URxvt" instance="dev"] $ws1
+assign [class="Emacs"] $ws1
 assign [class="Evolution"] $ws8
 assign [class="Opera"] $ws9
 assign [class="URxvt" instance="admin"] $ws10
@@ -205,4 +209,4 @@ exec urxvt -name admin
 
 exec pamac-tray 
 exec xmodmap ~/.swapcapsesc
-
+exec dunst -conf ~/.config/i3/dunstrc

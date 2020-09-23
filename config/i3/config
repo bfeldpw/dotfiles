@@ -195,6 +195,8 @@ bindsym Shift+Ctrl+s exec ~/.config/i3/i3lock-solarized/bin/i3lock-solarized-dar
 
 bindsym Shift+Ctrl+c exec xmodmap ~/.swapcapsesc
 
+bindsym $mod+Shift+s sticky toggle
+
 assign [class="URxvt" instance="dev"] $ws1
 assign [class="Emacs"] $ws1
 assign [class="Evolution"] $ws8

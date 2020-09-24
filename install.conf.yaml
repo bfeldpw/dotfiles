@@ -1,6 +1,7 @@
 - clean: ['~']
 
 - link:
+    ~/.doom.d: doom.d 
     ~/.profile: profile
     ~/.gitconfig: gitconfig
     ~/.screenrc: screenrc

@@ -202,7 +202,7 @@ bindsym $mod+Shift+s sticky toggle
 assign [class="URxvt" instance="dev"] $ws1
 assign [class="Emacs"] $ws1
 assign [class="Evolution"] $ws8
-assign [class="element"] $ws8
+assign [class="Element"] $ws8
 assign [class="Opera"] $ws9
 assign [class="URxvt" instance="admin"] $ws10
 
@@ -216,3 +216,4 @@ exec urxvt -name admin
 exec pamac-tray 
 exec xmodmap ~/.swapcapsesc
 exec dunst -conf ~/.config/i3/dunstrc
+exec redshift-gtk

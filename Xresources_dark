@@ -1,4 +1,5 @@
-! Solarized color scheme for the X Window System
+
+
 !
 ! http://ethanschoonover.com/solarized
 
@@ -71,4 +72,7 @@ URxvt.intensityStyles:         false
 *color15:                 S_base3
 
 *scrollBar: false
-URxvt.font: xft:monospace:size=11
+URxvt.font:     xft:monospace:pixelsize=15:antialias=true
+URxvt.boldFont: xft:monospace:bold:pixelsize=15:antialias=true
+URxvt*transparent: true
+URxvt*shading: 25

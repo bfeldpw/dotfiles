@@ -203,14 +203,14 @@ assign [class="URxvt" instance="dev"] $ws1
 assign [class="Emacs"] $ws1
 assign [class="Evolution"] $ws8
 assign [class="Element"] $ws8
-assign [class="Opera"] $ws9
+assign [class="Brave-browser"] $ws9
 assign [class="URxvt" instance="admin"] $ws10
 
 exec emacs
 exec urxvt -name dev
 exec evolution
 exec element-desktop
-exec opera 
+exec brave-browser
 exec urxvt -name admin
 
 exec pamac-tray 

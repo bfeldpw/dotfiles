@@ -11,6 +11,7 @@ ZSH=/usr/share/oh-my-zsh/
 ZSH_THEME="blinks"
 #ZSH_THEME="bira"
 #ZSH_THEME="michelebologna"
+#ZSH_THEME="alanpeabody"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load

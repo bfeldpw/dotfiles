@@ -10,11 +10,11 @@
     ~/.profile: profile
     ~/.gitconfig: gitconfig
     ~/.screenrc: screenrc
+    ~/.swapcapsesc: swapcapsesc
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
     ~/.Xresources: Xresources_dark
-    ~/.config/ranger/rc.conf: 
-        path: config/ranger/
+    ~/.config/ranger/rc.conf: config/ranger/rc.conf
     ~/.config/i3:
         path: config/i3/
 

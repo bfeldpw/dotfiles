@@ -45,7 +45,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -199,19 +199,15 @@ bindsym Shift+Ctrl+c exec xmodmap ~/.swapcapsesc
 bindsym $mod+Shift+v floating toggle, sticky toggle, resize set 960 px 540 px
 bindsym $mod+Shift+s sticky toggle
 
-assign [class="URxvt" instance="dev"] $ws1
 assign [class="Emacs"] $ws1
 assign [class="Evolution"] $ws8
 assign [class="Element"] $ws8
 assign [class="Brave-browser"] $ws9
-assign [class="URxvt" instance="admin"] $ws10
 
 exec emacs
-exec urxvt -name dev
 exec evolution
 exec element-desktop
 exec brave-browser
-exec urxvt -name admin
 
 exec pamac-tray 
 exec xmodmap ~/.swapcapsesc

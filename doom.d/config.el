@@ -51,3 +51,5 @@
 ;; they are implemented.
 
 (setq-default flycheck-disabled-checkers '(irony))
+
+(setq org-log-done 'time)

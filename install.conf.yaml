@@ -18,4 +18,5 @@
     ~/.config/fish/config.fish: config/fish/config.fish
     ~/.config/i3:
         path: config/i3/
+    ~/.config/picom/picom.conf: config/picom/picom.conf
 

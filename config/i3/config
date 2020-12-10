@@ -212,4 +212,5 @@ exec brave-browser
 exec pamac-tray 
 exec xmodmap ~/.swapcapsesc
 exec dunst -conf ~/.config/i3/dunstrc
+exec picom
 exec redshift-gtk

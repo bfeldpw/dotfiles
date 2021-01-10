@@ -10,6 +10,7 @@
     ~/.doom.d: doom.d 
     ~/.profile: profile
     ~/.gitconfig: gitconfig
+    ~/.config/rofi: config/rofi
     ~/.screenrc: screenrc
     ~/.swapcapsesc: swapcapsesc
     ~/.vimrc: vimrc

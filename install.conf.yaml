@@ -6,6 +6,7 @@
 - clean: ['~']
 
 - link:
+    ~/.config/awesome: config/awesome
     ~/.doom.d: doom.d 
     ~/.profile: profile
     ~/.gitconfig: gitconfig

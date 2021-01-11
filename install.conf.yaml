@@ -18,5 +18,5 @@
     ~/.screenrc: screenrc
     ~/.swapcapsesc: swapcapsesc
     ~/.vimrc: vimrc
-    ~/.Xresources: Xresources_dark
+    ~/.Xresources: Xresources
     ~/.zshrc: zshrc

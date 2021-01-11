@@ -7,18 +7,16 @@
 
 - link:
     ~/.config/awesome: config/awesome
-    ~/.doom.d: doom.d 
-    ~/.profile: profile
-    ~/.gitconfig: gitconfig
+    ~/.config/fish/config.fish: config/fish/config.fish
+    ~/.config/i3: config/i3
+    ~/.config/picom/picom.conf: config/picom/picom.conf
+    ~/.config/ranger/rc.conf: config/ranger/rc.conf
     ~/.config/rofi: config/rofi
+    ~/.doom.d: doom.d
+    ~/.gitconfig: gitconfig
+    ~/.profile: profile
     ~/.screenrc: screenrc
     ~/.swapcapsesc: swapcapsesc
     ~/.vimrc: vimrc
-    ~/.zshrc: zshrc
     ~/.Xresources: Xresources_dark
-    ~/.config/ranger/rc.conf: config/ranger/rc.conf
-    ~/.config/fish/config.fish: config/fish/config.fish
-    ~/.config/i3:
-        path: config/i3/
-    ~/.config/picom/picom.conf: config/picom/picom.conf
-
+    ~/.zshrc: zshrc

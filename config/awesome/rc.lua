@@ -342,6 +342,9 @@ globalkeys = gears.table.join(
                   }
               end,
               {description = "lua execute prompt", group = "awesome"}),
+    -- Keyboard layout
+    awful.key({ modkey, "Shift" }, "e", function() awful.spawn.with_shell("xmodmap ~/.swapcapsesc") end,
+              {description="Switch Esc and CapsLock", group="keyboard mapping"}),
     -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
               {description = "show the menubar", group = "launcher"})

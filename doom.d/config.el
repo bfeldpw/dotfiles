@@ -56,3 +56,7 @@
 
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e/")
 (require 'mu4e)
+
+(map! :leader
+      :desc "Toggle collapse/expand current column in org table"
+      "n i" #'org-table-toggle-column-width)

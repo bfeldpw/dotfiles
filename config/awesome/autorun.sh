@@ -10,6 +10,7 @@ function run {
 # run picom
 run redshift-gtk
 run pamac-tray
+run pa-applet
 run /usr/lib/lxpolkit/lxpolkit
 
 

@@ -13,6 +13,7 @@
     ~/.config/ranger/rc.conf: config/ranger/rc.conf
     ~/.config/rofi: config/rofi
     ~/.doom.d: doom.d
+    ~/.alacritty.yml: alacritty.yml
     ~/.gitconfig: gitconfig
     ~/.profile: profile
     ~/.screenrc: screenrc

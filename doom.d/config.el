@@ -53,6 +53,7 @@
 (setq-default flycheck-disabled-checkers '(irony))
 
 (setq org-log-done 'time)
+(setq default-tab-width 4)
 
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/mu4e/")
 (require 'mu4e)
@@ -60,3 +61,6 @@
 (map! :leader
       :desc "Toggle collapse/expand current column in org table"
       "n i" #'org-table-toggle-column-width)
+
+(global-undo-tree-mode)
+(evil-set-undo-system 'undo-tree)

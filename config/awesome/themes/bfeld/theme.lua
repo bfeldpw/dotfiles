@@ -1,5 +1,5 @@
 -------------------------------
---  "Nord" awesome theme     --
+--  "Bfeld" awesome theme     --
 --  by hmix adapted from     --
 --  zenburn theme            --
 --    By Adrian C. (anrxc)   --
@@ -11,8 +11,8 @@ local dpi = require("beautiful.xresources").apply_dpi
 
 -- {{{ Main
 local theme = {}
--- theme.wallpaper = themes_path .. "nord/nord-background.png"
-theme.wallpaper = themes_path .. "nord/wallpaper_01.png"
+-- theme.wallpaper = themes_path .. "bfeld/bfeld-background.png"
+theme.wallpaper = themes_path .. "bfeld/wallpaper_01.png"
 -- }}}
 
 -- {{{ Styles
@@ -80,61 +80,61 @@ theme.menu_width  = dpi(250)
 
 -- {{{ Icons
 -- {{{ Taglist
-theme.taglist_squares_sel   = themes_path .. "nord/taglist/squarefz.png"
-theme.taglist_squares_unsel = themes_path .. "nord/taglist/squarez.png"
+theme.taglist_squares_sel   = themes_path .. "bfeld/taglist/squarefz.png"
+theme.taglist_squares_unsel = themes_path .. "bfeld/taglist/squarez.png"
 --theme.taglist_squares_resize = "false"
 -- }}}
 
 -- {{{ Misc
-theme.awesome_icon           = themes_path .. "nord/awesome-icon.png"
+theme.awesome_icon           = themes_path .. "bfeld/awesome-icon.png"
 theme.menu_submenu_icon      = themes_path .. "default/submenu.png"
 -- }}}
 
 -- {{{ Layout
-theme.layout_tile       = themes_path .. "nord/layouts/tile.png"
-theme.layout_tileleft   = themes_path .. "nord/layouts/tileleft.png"
-theme.layout_tilebottom = themes_path .. "nord/layouts/tilebottom.png"
-theme.layout_tiletop    = themes_path .. "nord/layouts/tiletop.png"
-theme.layout_fairv      = themes_path .. "nord/layouts/fairv.png"
-theme.layout_fairh      = themes_path .. "nord/layouts/fairh.png"
-theme.layout_spiral     = themes_path .. "nord/layouts/spiral.png"
-theme.layout_dwindle    = themes_path .. "nord/layouts/dwindle.png"
-theme.layout_max        = themes_path .. "nord/layouts/max.png"
-theme.layout_fullscreen = themes_path .. "nord/layouts/fullscreen.png"
-theme.layout_magnifier  = themes_path .. "nord/layouts/magnifier.png"
-theme.layout_floating   = themes_path .. "nord/layouts/floating.png"
-theme.layout_cornernw   = themes_path .. "nord/layouts/cornernw.png"
-theme.layout_cornerne   = themes_path .. "nord/layouts/cornerne.png"
-theme.layout_cornersw   = themes_path .. "nord/layouts/cornersw.png"
-theme.layout_cornerse   = themes_path .. "nord/layouts/cornerse.png"
+theme.layout_tile       = themes_path .. "bfeld/layouts/tile.png"
+theme.layout_tileleft   = themes_path .. "bfeld/layouts/tileleft.png"
+theme.layout_tilebottom = themes_path .. "bfeld/layouts/tilebottom.png"
+theme.layout_tiletop    = themes_path .. "bfeld/layouts/tiletop.png"
+theme.layout_fairv      = themes_path .. "bfeld/layouts/fairv.png"
+theme.layout_fairh      = themes_path .. "bfeld/layouts/fairh.png"
+theme.layout_spiral     = themes_path .. "bfeld/layouts/spiral.png"
+theme.layout_dwindle    = themes_path .. "bfeld/layouts/dwindle.png"
+theme.layout_max        = themes_path .. "bfeld/layouts/max.png"
+theme.layout_fullscreen = themes_path .. "bfeld/layouts/fullscreen.png"
+theme.layout_magnifier  = themes_path .. "bfeld/layouts/magnifier.png"
+theme.layout_floating   = themes_path .. "bfeld/layouts/floating.png"
+theme.layout_cornernw   = themes_path .. "bfeld/layouts/cornernw.png"
+theme.layout_cornerne   = themes_path .. "bfeld/layouts/cornerne.png"
+theme.layout_cornersw   = themes_path .. "bfeld/layouts/cornersw.png"
+theme.layout_cornerse   = themes_path .. "bfeld/layouts/cornerse.png"
 -- }}}
 
 -- {{{ Titlebar
-theme.titlebar_close_button_focus  = themes_path .. "nord/titlebar/close_focus.png"
-theme.titlebar_close_button_normal = themes_path .. "nord/titlebar/close_normal.png"
+theme.titlebar_close_button_focus  = themes_path .. "bfeld/titlebar/close_focus.png"
+theme.titlebar_close_button_normal = themes_path .. "bfeld/titlebar/close_normal.png"
 
 theme.titlebar_minimize_button_normal = themes_path .. "default/titlebar/minimize_normal.png"
 theme.titlebar_minimize_button_focus  = themes_path .. "default/titlebar/minimize_focus.png"
 
-theme.titlebar_ontop_button_focus_active  = themes_path .. "nord/titlebar/ontop_focus_active.png"
-theme.titlebar_ontop_button_normal_active = themes_path .. "nord/titlebar/ontop_normal_active.png"
-theme.titlebar_ontop_button_focus_inactive  = themes_path .. "nord/titlebar/ontop_focus_inactive.png"
-theme.titlebar_ontop_button_normal_inactive = themes_path .. "nord/titlebar/ontop_normal_inactive.png"
+theme.titlebar_ontop_button_focus_active  = themes_path .. "bfeld/titlebar/ontop_focus_active.png"
+theme.titlebar_ontop_button_normal_active = themes_path .. "bfeld/titlebar/ontop_normal_active.png"
+theme.titlebar_ontop_button_focus_inactive  = themes_path .. "bfeld/titlebar/ontop_focus_inactive.png"
+theme.titlebar_ontop_button_normal_inactive = themes_path .. "bfeld/titlebar/ontop_normal_inactive.png"
 
-theme.titlebar_sticky_button_focus_active  = themes_path .. "nord/titlebar/sticky_focus_active.png"
-theme.titlebar_sticky_button_normal_active = themes_path .. "nord/titlebar/sticky_normal_active.png"
-theme.titlebar_sticky_button_focus_inactive  = themes_path .. "nord/titlebar/sticky_focus_inactive.png"
-theme.titlebar_sticky_button_normal_inactive = themes_path .. "nord/titlebar/sticky_normal_inactive.png"
+theme.titlebar_sticky_button_focus_active  = themes_path .. "bfeld/titlebar/sticky_focus_active.png"
+theme.titlebar_sticky_button_normal_active = themes_path .. "bfeld/titlebar/sticky_normal_active.png"
+theme.titlebar_sticky_button_focus_inactive  = themes_path .. "bfeld/titlebar/sticky_focus_inactive.png"
+theme.titlebar_sticky_button_normal_inactive = themes_path .. "bfeld/titlebar/sticky_normal_inactive.png"
 
-theme.titlebar_floating_button_focus_active  = themes_path .. "nord/titlebar/floating_focus_active.png"
-theme.titlebar_floating_button_normal_active = themes_path .. "nord/titlebar/floating_normal_active.png"
-theme.titlebar_floating_button_focus_inactive  = themes_path .. "nord/titlebar/floating_focus_inactive.png"
-theme.titlebar_floating_button_normal_inactive = themes_path .. "nord/titlebar/floating_normal_inactive.png"
+theme.titlebar_floating_button_focus_active  = themes_path .. "bfeld/titlebar/floating_focus_active.png"
+theme.titlebar_floating_button_normal_active = themes_path .. "bfeld/titlebar/floating_normal_active.png"
+theme.titlebar_floating_button_focus_inactive  = themes_path .. "bfeld/titlebar/floating_focus_inactive.png"
+theme.titlebar_floating_button_normal_inactive = themes_path .. "bfeld/titlebar/floating_normal_inactive.png"
 
-theme.titlebar_maximized_button_focus_active  = themes_path .. "nord/titlebar/maximized_focus_active.png"
-theme.titlebar_maximized_button_normal_active = themes_path .. "nord/titlebar/maximized_normal_active.png"
-theme.titlebar_maximized_button_focus_inactive  = themes_path .. "nord/titlebar/maximized_focus_inactive.png"
-theme.titlebar_maximized_button_normal_inactive = themes_path .. "nord/titlebar/maximized_normal_inactive.png"
+theme.titlebar_maximized_button_focus_active  = themes_path .. "bfeld/titlebar/maximized_focus_active.png"
+theme.titlebar_maximized_button_normal_active = themes_path .. "bfeld/titlebar/maximized_normal_active.png"
+theme.titlebar_maximized_button_focus_inactive  = themes_path .. "bfeld/titlebar/maximized_focus_inactive.png"
+theme.titlebar_maximized_button_normal_inactive = themes_path .. "bfeld/titlebar/maximized_normal_inactive.png"
 -- }}}
 -- }}}
 

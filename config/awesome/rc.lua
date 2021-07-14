@@ -45,8 +45,8 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init("~/.config/awesome/themes/nord/theme.lua")
--- beautiful.useless_gap = 3
+beautiful.init("~/.config/awesome/themes/bfeld/theme.lua")
+beautiful.useless_gap = 5
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
@@ -65,8 +65,8 @@ awful.layout.layouts = {
     awful.layout.suit.tile,
     awful.layout.suit.tile.bottom,
     awful.layout.suit.spiral.dwindle,
-    awful.layout.suit.max,
-    awful.layout.suit.magnifier,
+    -- awful.layout.suit.max,
+    -- awful.layout.suit.magnifier,
     awful.layout.suit.corner.nw,
     -- awful.layout.suit.max.fullscreen,
     -- awful.layout.suit.tile.left,
@@ -171,6 +171,8 @@ awful.screen.connect_for_each_screen(function(s)
 
     -- Each screen has its own tag table.
     awful.tag({ " 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 " }, s, awful.layout.layouts[1])
+
+    s.tags[8].gap_single_client = false
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -511,7 +513,7 @@ awful.rules.rules = {
 
     -- Add titlebars to normal clients and dialogs
     { rule_any = {type = { "normal", "dialog" }
-      }, properties = { titlebars_enabled = true }
+      }, properties = { titlebars_enabled = false }
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.

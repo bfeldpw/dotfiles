@@ -61,6 +61,9 @@
 (map! :leader
       :desc "Toggle collapse/expand current column in org table"
       "n i" #'org-table-toggle-column-width)
+(map! :leader
+      :desc "Display org-todo-tree"
+      "n T" #'org-show-todo-tree)
 
 (global-undo-tree-mode)
 (evil-set-undo-system 'undo-tree)

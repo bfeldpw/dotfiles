@@ -237,9 +237,9 @@ confirmation_menu_quit = awful.menu({
                  { "  Suspend", function () awful.spawn.with_shell("systemctl -i suspend") end},
                  { "  Lock", function () awful.spawn.with_shell("dm-tool switch-to-greeter") end},
                  { "  Lock and Suspend", function () awful.spawn.with_shell("dm-tool switch-to-greeter && sleep 5 && systemctl -i suspend") end},
-                 { "  Logout", function () awful.spawn.with_shell("killall awesome") end},
-                 { "  Logout and Reboot", function () awful.spawn.with_shell("killall awesome && sleep 5 && systemctl -i reboot") end},
-                 { "  Logout and Shutdown", function () awful.spawn.with_shell("killall awesome && sleep 5 && systemctl -i poweroff") end},
+                 { "  Logout", function () awful.spawn.with_shell("systemctl restart lightdm.service") end},
+                 { "  Logout and Reboot", function () awful.spawn.with_shell("systemctl stop lightdm.service && sleep 5 && systemctl -i reboot") end},
+                 { "  Logout and Shutdown", function () awful.spawn.with_shell("systemctl stop lightdm.service && sleep 5 && systemctl -i poweroff") end},
                  { "  Quit Awesome (hard logout)", function () awesome.quit() end}
 }})
 

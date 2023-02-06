@@ -66,7 +66,7 @@ awful.layout.layouts = {
     awful.layout.suit.tile.bottom,
     awful.layout.suit.spiral.dwindle,
     -- awful.layout.suit.max,
-    -- awful.layout.suit.magnifier,
+    awful.layout.suit.magnifier,
     awful.layout.suit.corner.nw,
     -- awful.layout.suit.max.fullscreen,
     -- awful.layout.suit.tile.left,
@@ -234,12 +234,11 @@ root.buttons(gears.table.join(
 
 confirmation_menu_quit = awful.menu({
         items = {{ "  Cancel (Esc)", function () end, beautiful.awesome_icon},
-                 { "  Suspend", function () awful.spawn.with_shell("systemctl -i suspend") end},
+                 -- { "  Suspend", function () awful.spawn.with_shell("systemctl -i suspend") end},
                  { "  Lock", function () awful.spawn.with_shell("dm-tool switch-to-greeter") end},
-                 { "  Lock and Suspend", function () awful.spawn.with_shell("dm-tool switch-to-greeter && sleep 5 && systemctl -i suspend") end},
                  { "  Logout", function () awful.spawn.with_shell("systemctl restart lightdm.service") end},
-                 { "  Logout and Reboot", function () awful.spawn.with_shell("systemctl stop lightdm.service && sleep 5 && systemctl -i reboot") end},
-                 { "  Logout and Shutdown", function () awful.spawn.with_shell("systemctl stop lightdm.service && sleep 5 && systemctl -i poweroff") end},
+                 -- { "  Logout and Reboot", function () awful.spawn.with_shell("systemctl stop lightdm.service && sleep 5 && reboot") end},
+                 -- { "  Logout and Shutdown", function () awful.spawn.with_shell("systemctl stop lightdm.service && sleep 5 && systemctl -i poweroff") end},
                  { "  Quit Awesome (hard logout)", function () awesome.quit() end}
 }})
 
@@ -618,3 +617,4 @@ awful.spawn.with_shell("xmodmap ~/.swapcapsesc")
 
 -- Increase width of master for tag 1
 awful.tag.incmwfact(0.2, root.tags()[1])
+-- awful.tag.setproperty(root.tags()[4], "mwfact", 0.75)

@@ -27,4 +27,4 @@ bind d pow_detach
 bind ^d pow_detach
 
 startup_message off
-
+defscrollback 5000

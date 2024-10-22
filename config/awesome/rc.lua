@@ -199,7 +199,14 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s })
+    local new_shape = function(cr, width, height)
+          gears.shape.rounded_rect(cr, width, height, 12)
+    end
+    s.mywibox = awful.wibar({   position = "top",
+                                width = s.workarea.width - 20,
+                                opacity = 0.9,
+                                screen = s,
+                                shape = new_shape })
 
     -- Add widgets to the wibox
     s.mywibox:setup {
@@ -368,6 +375,8 @@ clientkeys = gears.table.join(
               {description = "move to screen", group = "client"}),
     awful.key({ modkey,           }, "t",      function (c) c.ontop = not c.ontop            end,
               {description = "toggle keep on top", group = "client"}),
+    awful.key({ modkey, 'Control' }, 't',      awful.titlebar.toggle,
+                {description = 'toggle title bar', group = 'client'}),
     awful.key({ modkey,           }, "n",
         function (c)
             -- The client currently has the input focus, so it cannot be
@@ -609,6 +618,14 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+
+client.connect_signal("property::floating", function(c)
+    if c.floating then
+        awful.titlebar.show(c)
+    else
+        awful.titlebar.hide(c)
+    end
+end)
 
 -- {{{ Autostart
 awful.spawn.with_shell("~/.config/awesome/autorun.sh")

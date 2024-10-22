@@ -7,7 +7,8 @@ function run {
   fi
 }
 
-# run picom
+run picom
+# run polybar
 # run redshift-gtk
 run redshift -v -P -l 50.2:10.18
 run pamac-tray

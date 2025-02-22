@@ -360,9 +360,9 @@ window.opacity: 0.9
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
-  program: /usr/bin/fish
-#  args:
-#    - --login
+  program: /usr/bin/zsh
+#args:
+#  --login
 
 # Startup directory
 #

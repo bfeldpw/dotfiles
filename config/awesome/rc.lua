@@ -355,7 +355,8 @@ globalkeys = gears.table.join(
               {description="Switch Esc and CapsLock", group="keyboard mapping"}),
     -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+              {description = "show the menubar", group = "launcher"}),
+    awful.key({}, "Print", function() awful.spawn("flameshot gui") end)
 )
 
 clientkeys = gears.table.join(
@@ -619,13 +620,13 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
-client.connect_signal("property::floating", function(c)
-    if c.floating then
-        awful.titlebar.show(c)
-    else
-        awful.titlebar.hide(c)
-    end
-end)
+-- client.connect_signal("property::floating", function(c)
+--     if c.floating then
+--         awful.titlebar.show(c)
+--     else
+--         awful.titlebar.hide(c)
+--     end
+-- end)
 
 -- {{{ Autostart
 awful.spawn.with_shell("~/.config/awesome/autorun.sh")

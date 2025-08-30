@@ -12,7 +12,7 @@ theme.wallpaper = "~/.config/awesome/background.jpg"
 -- }}}
 
 -- {{{ Styles
-theme.font      = "monospace 9"
+theme.font      = "monospace 16"
 
 -- {{{ Colors
 theme.fg_normal  = "#DCDCCC"

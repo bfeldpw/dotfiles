@@ -17,7 +17,7 @@ theme.wallpaper = themes_path .. "bfeld/wallpaper_01.png"
 
 -- {{{ Styles
 -- theme.font      = "sans 8"
-theme.font      = "Play 11"
+theme.font      = "Play 16"
 
 -- {{{ Colors
 theme.fg_normal  = "#ECEFF4"

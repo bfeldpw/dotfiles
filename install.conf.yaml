@@ -19,6 +19,5 @@
     ~/.profile: profile
     ~/.screenrc: screenrc
     ~/.swapcapsesc: swapcapsesc
-    ~/.vimrc: vimrc
     ~/.Xresources: Xresources
     ~/.zshrc: zshrc

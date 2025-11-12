@@ -1,3 +1,2 @@
 #!/bin/sh
-xrandr -s 5120x1440
-
+xrandr --output HDMI-0 --mode 5120x1440 --rate 60

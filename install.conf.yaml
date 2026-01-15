@@ -12,6 +12,7 @@
     ~/.config/picom/picom.conf: config/picom/picom.conf
     ~/.config/ranger/rc.conf: config/ranger/rc.conf
     ~/.config/rofi: config/rofi
+    ~/.config/xfce4/xfconf/xfce-perchannel-xml: config/xfce4/xfconf/xfce-perchannel-xml
     ~/.doom.d: doom.d
     ~/.alacritty.yml: alacritty.yml
     ~/.alacritty.toml: alacritty.toml

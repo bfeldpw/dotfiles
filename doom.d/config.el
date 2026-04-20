@@ -73,7 +73,6 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
-<<<<<<< Updated upstream
 (setq shell-file-name (executable-find "bash"))
 (setq-default vterm-shell (executable-find "fish"))
 (setq-default explicit-shell-file-name (executable-find "fish"))
@@ -84,8 +83,6 @@
 (after! treesit
   (add-to-list 'treesit-language-source-alist
                '(odin "https://github.com/tree-sitter-grammars/tree-sitter-odin")))
-=======
 
 (setq org-startup-folded t)
 (setq org-log-done 'time)
->>>>>>> Stashed changes

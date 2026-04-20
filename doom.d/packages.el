@@ -51,11 +51,6 @@
 ;; ...or multiple packages
 ;; (unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
-<<<<<<< Updated upstream
-;(unpin! t)
 
 (package! odin-ts-mode
   :recipe (:host github :repo "Sampie159/odin-ts-mode"))
-=======
-;; (unpin! t)
->>>>>>> Stashed changes

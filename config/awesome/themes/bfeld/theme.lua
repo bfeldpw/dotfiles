@@ -12,7 +12,8 @@ local dpi = require("beautiful.xresources").apply_dpi
 -- {{{ Main
 local theme = {}
 -- theme.wallpaper = themes_path .. "bfeld/bfeld-background.png"
-theme.wallpaper = themes_path .. "bfeld/wallpaper_01.png"
+-- theme.wallpaper = themes_path .. "bfeld/wallpaper_01.png"
+theme.wallpaper = themes_path .. "bfeld/endeavouros-wallpaper.png"
 -- }}}
 
 -- {{{ Styles

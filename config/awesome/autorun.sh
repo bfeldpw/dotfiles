@@ -17,8 +17,8 @@ run xfce4-power-manager
 run xfce4-clipman
 run flameshot
 run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 
-run fastcompmgr -i 0.8 -e 0.8
-# run picom
+# run fastcompmgr -i 0.8 -e 0.8
+run picom
 # run polybar
 # run /usr/lib/lxpolkit/lxpolkit
 # run pa-applet

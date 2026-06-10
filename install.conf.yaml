@@ -9,6 +9,7 @@
     ~/.config/awesome: config/awesome
     ~/.config/DankMaterialShell/settings.json: config/DankMaterialShell/settings.json
     ~/.config/fish/config.fish: config/fish/config.fish
+    ~/.config/ghostty/config: config/ghostty/config
     ~/.config/i3: config/i3
     ~/.config/niri: config/niri
     ~/.config/picom/picom.conf: config/picom/picom.conf
